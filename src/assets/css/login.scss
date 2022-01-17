@@ -1,0 +1,47 @@
+body {
+  overflow-y: hidden;
+}
+
+.login-right {
+  background: url("../images/auth-bg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 100vh;
+}
+
+.login-left {
+  padding-left: 5rem;
+  padding-top: 2.5rem;
+  //   overflow-y: hidden;
+  // height: 100%;
+}
+
+.login-form {
+  // padding-top: 3.5rem;
+}
+
+.header-1 {
+  font-family: -apple-system, BlinkMacSystemFont, "DM Serif Display", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 2.488rem;
+  line-height: 3.438rem;
+  font-weight: bold;
+}
+
+.google-login-button {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgot-pass { 
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.forgot-pass a {
+  color: #00000099;
+  text-decoration: underline;
+}
