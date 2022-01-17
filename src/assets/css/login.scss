@@ -9,15 +9,31 @@ body {
   height: 100vh;
 }
 
-.login-left {
-  padding-left: 5rem;
-  padding-top: 2.5rem;
-  //   overflow-y: hidden;
-  // height: 100%;
+.login-left img {
+  width: 6.5rem;
 }
 
-.login-form {
-  // padding-top: 3.5rem;
+.login-left {
+  padding-left: 3rem;
+  padding-top: 2.5rem;
+}
+
+.register-left {
+  background: url("../images/auth-bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 100vh;
+  padding-left: 5rem;
+  padding-top: 2.5rem;
+}
+
+.register-left img {
+  width: 6.5rem;
+}
+
+.register-right {
+  padding-left: 6rem;
+  padding-top: 2.5rem;
 }
 
 .header-1 {
@@ -35,7 +51,7 @@ body {
   align-items: center;
 }
 
-.forgot-pass { 
+.forgot-pass {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
@@ -44,4 +60,11 @@ body {
 .forgot-pass a {
   color: #00000099;
   text-decoration: underline;
+}
+
+.register-disclaimer {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  color: rgba(0, 0, 0, 0.6);
 }
