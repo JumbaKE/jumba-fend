@@ -4,15 +4,15 @@ import GoogleLogin from "react-google-login";
 
 import "../../assets/css/login.scss";
 
-function LoginForm() {
+function RegisterForm() {
   return (
     <div>
-      <p>Member Access</p>
-      <p className="header-1">Login To Jumba</p>
+      <p>Register with your credentials below</p>
+      <p className="header-1">Sign up To Jumba</p>
       <p>
-        Don’t have an account? Register{" "}
+        Already a Member?{" "}
         <span>
-          <a href="/register">Here</a>
+          <a href="/">Login Here</a>
         </span>
       </p>
       <Form>
@@ -26,33 +26,40 @@ function LoginForm() {
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="password"
-            placeholder="at least 4 characters strong"
-          />
+          <Form.Control type="password" placeholder="6 characters + 1 Symbol" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox">
           <Form.Check type="checkbox" label="Remember Me?" />
         </Form.Group>
         <Button variant="primary" type="submit" className="btn-block">
-          Login
+          Create an account
         </Button>
         <br />
         <GoogleLogin
           clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
           className="google-login-button"
-          buttonText="Sign in with Google"
+          buttonText="Sign up with Google"
           onSuccess={true}
           onFailure={true}
           cookiePolicy={"single_host_origin"}
         />
 
-        <div className="forgot-pass">
-          <a href="\">Forgot your password?</a>
+        <div className="register-disclaimer">
+          <p>
+            This site is protected by reCAPTURE and the Google{" "}
+            <span>
+              <a href="">Privacy Policy</a>
+            </span>{" "}
+            and
+            <span>
+              <a href="">Terms and Conditions</a>
+            </span>{" "}
+            apply.
+          </p>
         </div>
       </Form>
     </div>
   );
 }
 
-export default LoginForm;
+export default RegisterForm;
