@@ -2,13 +2,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import Login from "./pages/loginPage";
+import LoginPage from "./pages/loginPage";
 import PageNotFound from "./pages/pageNotFound";
 
 const BaseRouter = () => (
   <div>
     <Routes>
-      <Route path="/" element={<Login />} />
+      <Route path="/" element={<LoginPage />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   </div>
