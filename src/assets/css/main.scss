@@ -1,0 +1,179 @@
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.dashboard-main-container {
+  background-color: #e5e5e5;
+}
+
+.login-right {
+  background: url("../images/auth-bg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 100vh;
+}
+
+.login-left img {
+  width: 6.5rem;
+}
+
+.login-left {
+  padding-left: 3rem;
+  padding-top: 2.5rem;
+}
+
+.dashboard-right {
+  height: 75vh;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  top: 10rem;
+  right: 4.3rem;
+}
+
+.dashboard-left {
+  padding-top: 4.375rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.dashboard-left img {
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+}
+
+.register-left {
+  background: url("../images/auth-bg.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 100vh;
+  padding-left: 5rem;
+  padding-top: 2.5rem;
+}
+
+.register-left img {
+  width: 6.5rem;
+}
+
+.register-right {
+  padding-left: 6rem;
+  padding-top: 2.5rem;
+}
+
+.header-1 {
+  font-family: -apple-system, BlinkMacSystemFont, "DM Serif Display", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 2.488rem;
+  line-height: 3.438rem;
+  font-weight: bold;
+}
+
+.google-login-button {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgot-pass {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.forgot-pass a {
+  color: #00000099;
+  text-decoration: underline;
+}
+
+.register-disclaimer {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.side-menu-row {
+  padding-left: 1rem;
+}
+
+.dash-container .row {
+  height: 100vh;
+}
+
+.dash-container {
+  padding-top: 10rem;
+}
+
+.menu-cols {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-cols > p {
+  padding-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.nav-bar {
+  top: 3rem;
+  width: 70vw;
+}
+
+.avatar-col {
+  top: 0.5rem;
+}
+
+.avatar-names {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.45);
+  padding-left: 1rem;
+}
+
+.avatar-names p {
+  margin-bottom: 0;
+}
+
+.avatar-names p:nth-last-child(1) {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-bar .row:nth-child(1) {
+  padding-left: 3.5rem;
+}
+
+.nav-bar-button {
+  padding-left: 3.5rem;
+}
+
+.main-dashboard {
+  padding-top: 5rem;
+  padding-left: 4.5rem;
+}
+
+.main-hero-1 {
+  font-family: DM Serif Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.488rem;
+  color: #000000;
+}
+
+.main-copy-1 {
+  padding-top: 0.03rem;
+}
+
+.dashboard-overview {
+  padding-top: 2.5rem;
+}
+
+.sub-header {
+  font-family: DM Serif Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.728rem;
+}
+
+

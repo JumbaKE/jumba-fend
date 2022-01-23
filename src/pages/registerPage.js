@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import RegisterForm from "../components/auth/register";
 
 import Logo from "../assets/images/main-logo.svg";
-import "../assets/css/login.scss";
+import "../assets/css/main.scss";
 
 function RegisterPage() {
   return (
