@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Avatar from "react-avatar";
 import SideMenu from "../components/dashboard";
 import Nav from "../components/navbar";
 
@@ -55,15 +56,106 @@ function DashboardPage() {
               </Col>
             </Row>
 
+            <div className="request-action">
+              <Row>
+                <Col className="col-md-2">
+                  <Icons.MegaPhoneIcon />
+                </Col>
+                <Col className="col-md-9">
+                  <p className="main-copy-3">
+                    Award 1200 pts to Tenant ID XXX for{" "}
+                    <span className="font-weight-bold">
+                      On time Rent payment
+                    </span>{" "}
+                    for November, 2021
+                  </p>
+                </Col>
+              </Row>
+            </div>
+            <br></br>
+            <Row className="d-flex justify-content-start">
+              <p className="main-copy-3">
+                {" "}
+                &nbsp; &nbsp; &nbsp; &nbsp;11th Nov 2021 14:17 HRS
+              </p>
+            </Row>
             <Row>
               <Col>
-                <Icons.MegaPhoneIcon />
-              </Col>
-              <Col className="md-2">
-                <p className="main-copy-1">
-                  Award 1200 pts to Tenant ID XXX for <span className="font-weight-bold">On time Rent payment</span> for
-                  November, 2021
+                <p className="request-title d-flex justify-content-center">
+                  Tenant - Kilimani Villas{" "}
                 </p>
+              </Col>
+            </Row>
+            <div className="tenant-details">
+              <Row>
+                <Col className="col-md-12 d-flex justify-content-center">
+                  <p>Brooklyn Simmons, Hse 227</p>
+                </Col>
+
+                <Col className="col-md-7 tenant-details-row-1 justify-content-around">
+                  <p>Users</p>
+                  <Row>
+                    <Avatar
+                      name="wikkie mosh"
+                      color="#0F3B80"
+                      size={27}
+                      textSizeRatio={1}
+                      round="20px"
+                    />
+
+                    <Avatar
+                      name="jane doe"
+                      color="#0F3B80"
+                      size={27}
+                      textSizeRatio={1}
+                      round="20px"
+                    />
+                  </Row>
+                </Col>
+
+                <Col className="col-md-10 tenant-details-row-2 justify-content-around">
+                  <p>Points</p>
+                  <Icons.PointsIcon fillColor="#000" />
+                  <p>7600</p>
+                </Col>
+              </Row>
+            </div>
+
+            <Row>
+              <Col className="p-4">
+                <p className="request-title d-flex justify-content-center">
+                  Transaction History
+                </p>
+              </Col>
+              <Col className="col-md-12 transaction-history">
+                <Row>
+                  <p className="transaction-copy">MTX1Q9853</p>
+                  <Icons.VerifiedIcon />
+                </Row>
+                <Row className="transaction-copy">
+                  <p>MTX1Q9853</p>
+                  <Icons.VerifiedIcon />
+                </Row>
+                <Row className="transaction-copy">
+                  <p>MTX1Q9853</p>
+                  <Icons.VerifiedIcon />
+                </Row>
+              </Col>
+            </Row>
+
+            <Row className="p-3">
+              <Col className="row-divider col-md-7 mx-auto" />
+            </Row>
+
+            <Row className="p-3 mx-auto">
+              <Col>
+                <Icons.AcceptIcon />
+                <p>Award</p>
+              </Col>
+
+              <Col>
+                <Icons.CancelIcon />
+                <p>Decline</p>
               </Col>
             </Row>
           </div>
