@@ -2,7 +2,7 @@ import React from "react";
 import { Form, Button } from "react-bootstrap";
 import GoogleLogin from "react-google-login";
 
-import "../../assets/css/login.scss";
+import "../../assets/css/main.scss";
 
 function RegisterForm() {
   return (
@@ -10,9 +10,9 @@ function RegisterForm() {
       <p>Register with your credentials below</p>
       <p className="header-1">Sign up To Jumba</p>
       <p>
-        Already a Member?{" "}
+        Already a Member? Login{" "}
         <span>
-          <a href="/">Login Here</a>
+          <a href="/">Here</a>
         </span>
       </p>
       <Form>

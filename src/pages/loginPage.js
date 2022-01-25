@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import LoginForm from "../components/auth/login";
 
 import Logo from "../assets/images/main-logo.svg";
-import "../assets/css/login.scss";
+import "../assets/css/main.scss";
 
 function LoginPage() {
   return (
