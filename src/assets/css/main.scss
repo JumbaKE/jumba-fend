@@ -109,6 +109,24 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: row;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.menu-cols:hover {
+  color: #0f3b80;
+  text-decoration: underline;
+  .svg-path {
+    fill: #0f3b80;
+  }
+
+  .svg-stroke {
+    stroke: #0f3b80;
+  }
+}
+
+.dash-container a:hover {
+  text-decoration: none;
 }
 
 .menu-cols > p {

@@ -9,16 +9,20 @@ function SideMenu() {
     <Container fluid className="dash-container">
       <Row className="side-menu-row g-lg-3 d-flex flex-column">
         <Col md={1}>
-          <div className="menu-cols">
-            <Icons.HomeIcon fillColor="black" />
-            <p>Dashboard</p>
-          </div>
+          <a href="dashboard">
+            <div className="menu-cols">
+              <Icons.HomeIcon fillColor="black" />
+              <p>Dashboard</p>
+            </div>
+          </a>
         </Col>
         <Col md={1}>
-          <div className="menu-cols">
-            <Icons.RequestsIcon fillColor="black" />
-            <p>Requests</p>
-          </div>
+          <a href="requests">
+            <div className="menu-cols">
+              <Icons.RequestsIcon fillColor="black" />
+              <p>Requests</p>
+            </div>
+          </a>
         </Col>
         <Col md={1}>
           <div className="menu-cols">

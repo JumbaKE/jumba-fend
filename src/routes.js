@@ -6,6 +6,7 @@ import LoginPage from "./pages/loginPage";
 import PageNotFound from "./pages/pageNotFound";
 import RegisterPage from "./pages/registerPage";
 import DashboardPage from "./pages/dashboardPage";
+import RequestsPage from "./pages/requestsPage";
 
 const BaseRouter = () => (
   <div>
@@ -13,6 +14,7 @@ const BaseRouter = () => (
       <Route path="/" element={<LoginPage />} />
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/dashboard" element={<DashboardPage />} />
+      <Route path="/requests" element={<RequestsPage />} />
 
       <Route path="*" element={<PageNotFound />} />
     </Routes>
