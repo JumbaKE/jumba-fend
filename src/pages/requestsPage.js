@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Avatar from "react-avatar";
 import SideMenu from "../components/dashboard";
 import Nav from "../components/navbar";
+import SummaryCard from "../components/summaryCard";
 
 import Logo from "../assets/images/main-logo.svg";
 import Icons from "../assets/images/icons";
@@ -29,6 +30,50 @@ function RequestsPage() {
                 <FontAwesomeIcon icon={faChevronCircleRight} size="sm" />
               </span>
             </p>
+
+            <Row className="d-flex flex-row">
+              <Col className="d-flex flex-row">
+                <SummaryCard
+                  summaryIcon={<Icons.SummaryPendingIcon />}
+                  summaryHeading="Pending"
+                  summaryContent="41"
+                />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <SummaryCard
+                  summaryIcon={<Icons.SummaryPendingIcon />}
+                  summaryHeading="All Requests"
+                  summaryContent="800+"
+                />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <SummaryCard
+                  summaryIcon={<Icons.SummaryPiggyIcon />}
+                  summaryHeading="Total Awarded"
+                  summaryContent="126, 000 jpts"
+                />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </Col>
+              
+              <Col className="d-flex flex-row p-3">
+                <SummaryCard
+                  summaryIcon={<Icons.SummaryWalletIcon />}
+                  summaryHeading="Request Action"
+                  summaryContent="Verify Payments"
+                />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <SummaryCard
+                  summaryIcon={<Icons.SummaryTicksIcon />}
+                  summaryHeading="Rent Payments"
+                  summaryContent="Verified"
+                />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <SummaryCard
+                  summaryIcon={<Icons.SummaryWalletIcon />}
+                  summaryHeading="User Group"
+                  summaryContent="Tenants"
+                />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </Col>
+            </Row>
           </div>
         </Col>
 
