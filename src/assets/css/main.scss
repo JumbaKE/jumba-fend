@@ -109,6 +109,24 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: row;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.menu-cols:hover {
+  color: #0f3b80;
+  text-decoration: underline;
+  .svg-path {
+    fill: #0f3b80;
+  }
+
+  .svg-stroke {
+    stroke: #0f3b80;
+  }
+}
+
+.dash-container a:hover {
+  text-decoration: none;
 }
 
 .menu-cols > p {
@@ -223,4 +241,76 @@ body {
 
 .row-divider {
   border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.summary-card {
+  width: 185px;
+  height: 150px;
+  left: 345px;
+  top: 276px;
+
+  // background: #0F3B80;
+  background: #ffffff;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.17);
+  border-radius: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.summary-row {
+  padding-left: 1.5rem;
+}
+
+.summary-heading-text {
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 0.833rem;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.summary-content-text {
+  margin-bottom: 0;
+  font-size: 0.833rem;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.request-list-title {
+  font-family: DM Sans;
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 0.833rem;
+
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.request-list-row {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.request-list-row:hover {
+  background-color: #0F3B80;
+
+  .request-list-content {
+    color: white;
+  }
+}
+
+.request-list-item {
+  top: 25%;
+  position: relative;
+}
+
+.request-list-content {
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 0.833rem;
 }

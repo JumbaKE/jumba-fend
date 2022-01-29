@@ -5,13 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Avatar from "react-avatar";
 import SideMenu from "../components/dashboard";
 import Nav from "../components/navbar";
+import SummaryCard from "../components/summaryCard";
+import RequestsList from "../components/requestsList";
 
 import Logo from "../assets/images/main-logo.svg";
 import Icons from "../assets/images/icons";
 import "../assets/css/main.scss";
-import RequestsList from "../components/requestsList";
 
-function DashboardPage() {
+function RequestsPage() {
   return (
     <Container fluid className="dashboard-main-container">
       <Row classsname="d-flex justify-content-between">
@@ -23,7 +24,7 @@ function DashboardPage() {
         <Col lg={8} className="dashboard-center">
           <Nav />
           <div className="main-dashboard">
-            <p className="main-hero-1">Hello Chris,</p>
+            <p className="main-hero-1">Requests</p>
             <p className="main-copy-1">
               You have 4 New Requests To Respond To &nbsp;
               <span>
@@ -31,16 +32,51 @@ function DashboardPage() {
               </span>
             </p>
 
-            <div className="dashboard-overview">
-              <p className="sub-header">Overview</p>
-              <p className="main-copy-1">November 2021 stats</p>
-            </div>
+            <Row className="d-flex flex-row">
+              <Col className="d-flex flex-row">
+                <SummaryCard
+                  summaryIcon={<Icons.SummaryPendingIcon />}
+                  summaryHeading="Pending"
+                  summaryContent="41"
+                />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <SummaryCard
+                  summaryIcon={<Icons.SummaryPendingIcon />}
+                  summaryHeading="All Requests"
+                  summaryContent="800+"
+                />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <SummaryCard
+                  summaryIcon={<Icons.SummaryPiggyIcon />}
+                  summaryHeading="Total Awarded"
+                  summaryContent="126, 000 jpts"
+                />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </Col>
 
-            <div className="dashboard-overview">
-              <p className="sub-header">Requests</p>
-              <p className="main-copy-1">November 1-30, 2021</p>
-              <RequestsList />
-            </div>
+              <Col className="d-flex flex-row p-3">
+                <SummaryCard
+                  summaryIcon={<Icons.SummaryWalletIcon />}
+                  summaryHeading="Request Action"
+                  summaryContent="Verify Payments"
+                />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <SummaryCard
+                  summaryIcon={<Icons.SummaryTicksIcon />}
+                  summaryHeading="Rent Payments"
+                  summaryContent="Verified"
+                />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <SummaryCard
+                  summaryIcon={<Icons.SummaryWalletIcon />}
+                  summaryHeading="User Group"
+                  summaryContent="Tenants"
+                />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </Col>
+            </Row>
+
+            <RequestsList />
           </div>
         </Col>
 
@@ -167,4 +203,4 @@ function DashboardPage() {
   );
 }
 
-export default DashboardPage;
+export default RequestsPage;
