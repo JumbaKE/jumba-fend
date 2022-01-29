@@ -6,6 +6,7 @@ import Avatar from "react-avatar";
 import SideMenu from "../components/dashboard";
 import Nav from "../components/navbar";
 import SummaryCard from "../components/summaryCard";
+import RequestsList from "../components/requestsList";
 
 import Logo from "../assets/images/main-logo.svg";
 import Icons from "../assets/images/icons";
@@ -52,7 +53,7 @@ function RequestsPage() {
                 />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </Col>
-              
+
               <Col className="d-flex flex-row p-3">
                 <SummaryCard
                   summaryIcon={<Icons.SummaryWalletIcon />}
@@ -74,6 +75,8 @@ function RequestsPage() {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </Col>
             </Row>
+
+            <RequestsList />
           </div>
         </Col>
 

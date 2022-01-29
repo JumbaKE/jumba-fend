@@ -279,3 +279,38 @@ body {
   font-style: normal;
   font-weight: bold;
 }
+
+.request-list-title {
+  font-family: DM Sans;
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 0.833rem;
+
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.request-list-row {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.request-list-row:hover {
+  background-color: #0F3B80;
+
+  .request-list-content {
+    color: white;
+  }
+}
+
+.request-list-item {
+  top: 25%;
+  position: relative;
+}
+
+.request-list-content {
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 0.833rem;
+}

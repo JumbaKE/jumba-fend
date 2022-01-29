@@ -9,6 +9,7 @@ import Nav from "../components/navbar";
 import Logo from "../assets/images/main-logo.svg";
 import Icons from "../assets/images/icons";
 import "../assets/css/main.scss";
+import RequestsList from "../components/requestsList";
 
 function DashboardPage() {
   return (
@@ -38,6 +39,7 @@ function DashboardPage() {
             <div className="dashboard-overview">
               <p className="sub-header">Requests</p>
               <p className="main-copy-1">November 1-30, 2021</p>
+              <RequestsList />
             </div>
           </div>
         </Col>
