@@ -10,6 +10,7 @@ import Logo from "../assets/images/main-logo.svg";
 import Icons from "../assets/images/icons";
 import "../assets/css/main.scss";
 import RequestsList from "../components/requestsList";
+import OverviewCard from "../components/overviewCard";
 
 function DashboardPage() {
   return (
@@ -34,6 +35,7 @@ function DashboardPage() {
             <div className="dashboard-overview">
               <p className="sub-header">Overview</p>
               <p className="main-copy-1">November 2021 stats</p>
+              <OverviewCard />
             </div>
 
             <div className="dashboard-overview">
