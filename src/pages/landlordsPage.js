@@ -11,6 +11,10 @@ import Icons from "../assets/images/icons";
 import "../assets/css/main.scss";
 import LandlordsList from "../components/landlordsList";
 import SummaryCard from "../components/summaryCard";
+import TopIndividuals from "../components/topIndividuals";
+import Landlord1 from "../assets/images/landlord1.png";
+import Landlord2 from "../assets/images/landlord2.png";
+import Landlord3 from "../assets/images/landlord3.png";
 
 function LandlordsPage() {
   return (
@@ -53,14 +57,32 @@ function LandlordsPage() {
                 />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </Col>
-              </Row>
+            </Row>
 
             <div className="dashboard-overview">
               <p className="sub-header">Top Landlords</p>
               <p className="main-copy-1">November 2021 stats</p>
-              
-              
+              <Row>
+                <Col className="d-flex flex-row">
+                  <TopIndividuals
+                    UserImage={Landlord1}
+                    UserName="Esther Howard"
+                    UserProperty="Lake View Aprt"
+                  />
 
+                  <TopIndividuals
+                    UserImage={Landlord2}
+                    UserName="Jenny Wilson"
+                    UserProperty="GreenFields"
+                  />
+
+                  <TopIndividuals
+                    UserImage={Landlord3}
+                    UserName="Floyd Miles"
+                    UserProperty="Westlands Plaza"
+                  />
+                </Col>
+              </Row>
             </div>
 
             <div className="dashboard-overview">

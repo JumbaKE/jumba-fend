@@ -345,5 +345,24 @@ body {
 }
 
 .btn {
-  background-color: #0F3B80;
+  background-color: #0f3b80;
+}
+
+.user-names {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8rem;
+
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.user-property {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.688rem;
+  line-height: 16px;
+
+  color: rgba(0, 0, 0, 0.7);
 }
