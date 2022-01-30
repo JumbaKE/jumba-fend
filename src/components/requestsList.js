@@ -89,7 +89,7 @@ const RequestsList = () => (
           </span>
         </Col>
       </Row>
-
+      <br />
       <Row className="col-md-10 request-list-row d-flex">
         <Form className="request-list-item">
           <Form.Check type="checkbox" id="requests" name="requests" label="" />
@@ -118,7 +118,7 @@ const RequestsList = () => (
           </span>
         </Col>
       </Row>
-
+      <br />
       <Row className="col-md-10 request-list-row d-flex">
         <Form className="request-list-item">
           <Form.Check type="checkbox" id="" label="" />
