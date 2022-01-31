@@ -1,6 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Avatar from "react-avatar";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SideMenu from "../components/dashboard";
@@ -15,6 +14,8 @@ import TopIndividuals from "../components/topIndividuals";
 import Landlord1 from "../assets/images/landlord1.png";
 import Landlord2 from "../assets/images/landlord2.png";
 import Landlord3 from "../assets/images/landlord3.png";
+import FeaturedLandlord from "../assets/images/featuredLandlord.png";
+import PropertyMap from "../assets/images/propertyMap.png";
 
 function LandlordsPage() {
   return (
@@ -98,118 +99,90 @@ function LandlordsPage() {
             <Row>
               <Col className="d-flex justify-content-between">
                 <div>
-                  <p>ID: HTR000238</p>
-                  <p>Request</p>
+                  <h2>Landlord</h2>
+                  <p>ID: L002342</p>
+                  <Icons.UnverifiedChip />
                 </div>
                 <div>
-                  <Icons.EditIcon />
+                  <Icons.PrintUserIcon />
+                </div>
+              </Col>
+            </Row>
+            <br />
+            <div className="user-details-box">
+              <Row>
+                <Col>
+                  <img src={FeaturedLandlord} alt="landlord image" />
+                </Col>
+
+                <Col>
+                  <h6>Albert Flores</h6>
+                  <h6>Landlord Emlack Hse</h6>
+                  <h6>
+                    <span>
+                      <Icons.PhoneIcon />
+                    </span>
+                    +254 700 000 000
+                  </h6>
+                </Col>
+
+                <Col>
+                  <h6>0 jumba points</h6>
+                </Col>
+
+                <Col>
+                  <h6>Monthly Rent, 1 year lease</h6>
+                </Col>
+              </Row>
+            </div>
+            <br />
+            <Row>
+              <Col>Properties(12)</Col>
+
+              <Col>
+                <h6>
+                  <span>
+                    <Icons.LocationPinIcon />
+                  </span>
+                  Kilimani Police Station
+                </h6>
+              </Col>
+              <Col>
+                <img src={PropertyMap} alt="map" />
+              </Col>
+            </Row>
+
+            <Row>
+              <Col>
+                <div>
+                  <Icons.SmallHomeIcon />
+                  <h6>Kilimani Villas</h6>
+                </div>
+                <div>
+                  <Icons.OpenDoorIcon />
+                  <h6>12 units</h6>
+                </div>
+              </Col>
+
+              <Col>
+                <div>
+                  <Icons.SmallKeyIcon />
+                  <h6>12 Tenants</h6>
+                </div>
+                <div>
+                  <Icons.SmallwalletIcon />
+                  <h6>Kshs 68k</h6>
                 </div>
               </Col>
             </Row>
 
-            <div className="request-action">
-              <Row>
-                <Col className="col-md-2">
-                  <Icons.MegaPhoneIcon />
-                </Col>
-                <Col className="col-md-9">
-                  <p className="main-copy-3">
-                    Award 1200 pts to Tenant ID XXX for{" "}
-                    <span className="font-weight-bold">
-                      On time Rent payment
-                    </span>{" "}
-                    for November, 2021
-                  </p>
-                </Col>
-              </Row>
-            </div>
-            <br></br>
-            <Row className="d-flex justify-content-start">
-              <p className="main-copy-3">
-                {" "}
-                &nbsp; &nbsp; &nbsp; &nbsp;11th Nov 2021 14:17 HRS
-              </p>
-            </Row>
             <Row>
               <Col>
-                <p className="request-title d-flex justify-content-center">
-                  Tenant - Kilimani Villas{" "}
-                </p>
+                <Button className="btn-md btn-success col-md-12">Verify</Button>
               </Col>
             </Row>
-            <div className="tenant-details">
-              <Row>
-                <Col className="col-md-12 d-flex justify-content-center">
-                  <p>Brooklyn Simmons, Hse 227</p>
-                </Col>
-
-                <Col className="col-md-7 tenant-details-row-1 justify-content-around">
-                  <p>Users</p>
-                  <Row>
-                    <Avatar
-                      name="wikkie mosh"
-                      color="#0F3B80"
-                      size={27}
-                      textSizeRatio={1}
-                      round="20px"
-                    />
-
-                    <Avatar
-                      name="jane doe"
-                      color="#0F3B80"
-                      size={27}
-                      textSizeRatio={1}
-                      round="20px"
-                    />
-                  </Row>
-                </Col>
-
-                <Col className="col-md-10 tenant-details-row-2 justify-content-around">
-                  <p>Points</p>
-                  <Icons.PointsIcon fillColor="#000" />
-                  <p>7600</p>
-                </Col>
-              </Row>
-            </div>
-
-            <Row>
-              <Col className="p-4">
-                <p className="request-title d-flex justify-content-center">
-                  Transaction History
-                </p>
-              </Col>
-              <Col className="col-md-12 transaction-history">
-                <Row>
-                  <p className="transaction-copy">MTX1Q9853</p>
-                  <Icons.VerifiedIcon />
-                </Row>
-                <Row className="transaction-copy">
-                  <p>MTX1Q9853</p>
-                  <Icons.VerifiedIcon />
-                </Row>
-                <Row className="transaction-copy">
-                  <p>MTX1Q9853</p>
-                  <Icons.VerifiedIcon />
-                </Row>
-              </Col>
-            </Row>
-
-            <Row className="p-3">
-              <Col className="row-divider col-md-7 mx-auto" />
-            </Row>
-
-            <Row className="p-3 mx-auto">
-              <Col>
-                <Icons.AcceptIcon />
-                <p>Award</p>
-              </Col>
-
-              <Col>
-                <Icons.CancelIcon />
-                <p>Decline</p>
-              </Col>
-            </Row>
-          </div>
+          </div>{" "}
+          {/* End of right panel */}
         </Col>
       </Row>
     </Container>
