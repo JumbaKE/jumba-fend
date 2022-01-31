@@ -33,6 +33,7 @@ function Nav() {
           </div>
         </Row>
 
+        <a href="/">
         <Row>
           <Col className="avatar-col">
             <FontAwesomeIcon icon={faBell} size="1x" />
@@ -51,6 +52,7 @@ function Nav() {
             </div>
           </Col>
         </Row>
+        </a>
       </Container>
     </Navbar>
   );

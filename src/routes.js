@@ -7,6 +7,7 @@ import RegisterPage from "./pages/registerPage";
 import DashboardPage from "./pages/dashboardPage";
 import RequestsPage from "./pages/requestsPage";
 import LandlordsPage from "./pages/landlordsPage";
+import TenantsPage from "./pages/tenantsPage";
 
 const BaseRouter = () => (
   <div>
@@ -16,6 +17,7 @@ const BaseRouter = () => (
       <Route path="/dashboard" element={<DashboardPage />} />
       <Route path="/requests" element={<RequestsPage />} />
       <Route path="/landlords" element={<LandlordsPage />} />
+      <Route path="/tenants" element={<TenantsPage />} />
 
       <Route path="*" element={<PageNotFound />} />
     </Routes>
