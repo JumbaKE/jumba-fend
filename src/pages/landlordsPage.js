@@ -96,11 +96,11 @@ function LandlordsPage() {
 
         <Col lg={2} className="dashboard-right">
           <div>
-            <Row>
+            <Row className="p-2">
               <Col className="d-flex justify-content-between">
                 <div>
-                  <h2>Landlord</h2>
-                  <p>ID: L002342</p>
+                  <h2 className="properties-num">Landlord</h2>
+                  <p className="location-copy">ID: L002342</p>
                   <Icons.UnverifiedChip />
                 </div>
                 <div>
@@ -110,15 +110,15 @@ function LandlordsPage() {
             </Row>
             <br />
             <div className="user-details-box">
-              <Row>
-                <Col>
+              <Row className="d-flex flex-column mx-auto p-1">
+                <Col className="col-md-4 landlord-avatar">
                   <img src={FeaturedLandlord} alt="landlord image" />
                 </Col>
 
-                <Col>
-                  <h6>Albert Flores</h6>
-                  <h6>Landlord Emlack Hse</h6>
-                  <h6>
+                <Col className="col-md-10">
+                  <h6 className="landlord-name">Albert Flores</h6>
+                  <h6 className="landlord-property">Landlord Emlack Hse</h6>
+                  <h6 className="landlord-contact">
                     <span>
                       <Icons.PhoneIcon />
                     </span>
@@ -126,56 +126,53 @@ function LandlordsPage() {
                   </h6>
                 </Col>
 
-                <Col>
-                  <h6>0 jumba points</h6>
+                <Col className="col-md-10">
+                  <h6 className="landlord-points">0 jumba points</h6>
                 </Col>
 
-                <Col>
-                  <h6>Monthly Rent, 1 year lease</h6>
+                <Col className="col-md-12">
+                  <h6 className="property-lease">Monthly Rent, 1 year lease</h6>
                 </Col>
               </Row>
             </div>
             <br />
-            <Row>
-              <Col>Properties(12)</Col>
+            <Row className="d-flex flex-row">
+              <Col className="col-md-10 properties-num">Properties(12)</Col>
 
-              <Col>
-                <h6>
-                  <span>
-                    <Icons.LocationPinIcon />
-                  </span>
-                  Kilimani Police Station
-                </h6>
+              <Col className="col-md-12 d-flex">
+                <Icons.LocationPinIcon /> &nbsp;
+                <h6 className="location-copy">Kilimani Police Station</h6>
               </Col>
-              <Col>
-                <img src={PropertyMap} alt="map" />
+              <Col className="col-md-6">
+                <img src={PropertyMap} alt="map" className="prop-map" />
               </Col>
             </Row>
 
-            <Row>
-              <Col>
-                <div>
-                  <Icons.SmallHomeIcon />
-                  <h6>Kilimani Villas</h6>
+            <br />
+            <Row className="d-flex flex-column">
+              <Col className="col-md-12 d-flex justify-content-center">
+                <div className="prop-details-group">
+                  <Icons.SmallHomeIcon /> &nbsp;
+                  <h6 className="prop-details-copy">Kilimani Villas</h6>
                 </div>
-                <div>
-                  <Icons.OpenDoorIcon />
-                  <h6>12 units</h6>
+                <div className="prop-details-group">
+                  <Icons.OpenDoorIcon /> &nbsp;
+                  <h6 className="prop-details-copy">12 units</h6>
                 </div>
               </Col>
-
-              <Col>
-                <div>
-                  <Icons.SmallKeyIcon />
-                  <h6>12 Tenants</h6>
+              &nbsp; &nbsp;
+              <Col className="col-md-12 d-flex justify-content-center">
+                <div className="prop-details-group">
+                  <Icons.SmallKeyIcon /> &nbsp;
+                  <h6 className="prop-details-copy">12 Tenants</h6>
                 </div>
-                <div>
-                  <Icons.SmallwalletIcon />
-                  <h6>Kshs 68k</h6>
+                <div className="prop-details-group">
+                  <Icons.SmallwalletIcon /> &nbsp;
+                  <h6 className="prop-details-copy">Kshs 68k</h6>
                 </div>
               </Col>
             </Row>
-
+            &nbsp; &nbsp;
             <Row>
               <Col>
                 <Button className="btn-md btn-success col-md-12">Verify</Button>
