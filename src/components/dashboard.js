@@ -25,28 +25,36 @@ function SideMenu() {
           </a>
         </Col>
         <Col md={1}>
-          <div className="menu-cols">
-            <Icons.PointsIcon fillColor="black" />
-            <p>Jumba Points</p>
-          </div>
+          <a href="points">
+            <div className="menu-cols">
+              <Icons.PointsIcon fillColor="black" />
+              <p>Jumba Points</p>
+            </div>
+          </a>
         </Col>
         <Col md={1}>
-          <div className="menu-cols">
-            <Icons.PaymentsIcon fillColor="black" />
-            <p>Payments</p>
-          </div>
+          <a href="payments">
+            <div className="menu-cols">
+              <Icons.PaymentsIcon fillColor="black" />
+              <p>Payments</p>
+            </div>
+          </a>
         </Col>
         <Col md={1}>
-          <div className="menu-cols">
-            <Icons.LandlordIcon fillColor="black" />
-            <p>Landlords</p>
-          </div>
+          <a href="landlords">
+            <div className="menu-cols">
+              <Icons.LandlordIcon fillColor="black" />
+              <p>Landlords</p>
+            </div>
+          </a>
         </Col>
         <Col md={1}>
-          <div className="menu-cols">
-            <Icons.TenantIcon fillColor="black" />
-            <p>Tenants</p>
-          </div>
+          <a href="tenants">
+            <div className="menu-cols">
+              <Icons.TenantIcon fillColor="black" />
+              <p>Tenants</p>
+            </div>
+          </a>
         </Col>
       </Row>
     </Container>

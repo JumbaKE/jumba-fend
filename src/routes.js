@@ -1,4 +1,3 @@
-/* eslint import/no-extraneous-dependencies: ["error", {"peerDependencies": true}] */
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
@@ -7,6 +6,7 @@ import PageNotFound from "./pages/pageNotFound";
 import RegisterPage from "./pages/registerPage";
 import DashboardPage from "./pages/dashboardPage";
 import RequestsPage from "./pages/requestsPage";
+import LandlordsPage from "./pages/landlordsPage";
 
 const BaseRouter = () => (
   <div>
@@ -15,6 +15,7 @@ const BaseRouter = () => (
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/dashboard" element={<DashboardPage />} />
       <Route path="/requests" element={<RequestsPage />} />
+      <Route path="/landlords" element={<LandlordsPage />} />
 
       <Route path="*" element={<PageNotFound />} />
     </Routes>
