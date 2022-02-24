@@ -34,24 +34,24 @@ function Nav() {
         </Row>
 
         <a href="/">
-        <Row>
-          <Col className="avatar-col">
-            <FontAwesomeIcon icon={faBell} size="1x" />
-          </Col>
-          <Col className="d-flex">
-            <Avatar
-              name="chris mwenda"
-              color="#0F3B80"
-              size={40}
-              textSizeRatio={2.5}
-              round="20px"
-            />
-            <div className="avatar-names">
-              <p>Chris</p>
-              <p>Admin</p>
-            </div>
-          </Col>
-        </Row>
+          <Row>
+            <Col className="avatar-col">
+              <FontAwesomeIcon icon={faBell} size="1x" />
+            </Col>
+            <Col className="d-flex">
+              <Avatar
+                name="chris mwenda"
+                color="#0F3B80"
+                size={40}
+                textSizeRatio={2.5}
+                round="20px"
+              />
+              <div className="avatar-names">
+                <p>Chris</p>
+                <p>Admin</p>
+              </div>
+            </Col>
+          </Row>
         </a>
       </Container>
     </Navbar>

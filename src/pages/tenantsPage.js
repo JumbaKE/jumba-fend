@@ -118,7 +118,9 @@ function TenantsPage() {
                 <Col className="col-md-10">
                   &nbsp;
                   <h6 className="landlord-name">Theresa Webb</h6>
-                  <h6 className="landlord-property">Tenant Kilimani Villas Hse 93</h6>
+                  <h6 className="landlord-property">
+                    Tenant Kilimani Villas Hse 93
+                  </h6>
                   <h6 className="landlord-contact">
                     <span>
                       <Icons.PhoneIcon />
