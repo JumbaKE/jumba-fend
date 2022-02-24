@@ -17,7 +17,7 @@ import Landlord3 from "../assets/images/landlord3.png";
 import FeaturedLandlord from "../assets/images/featuredLandlord.png";
 import PropertyMap from "../assets/images/propertyMap.png";
 
-function LandlordsPage() {
+function TenantsPage() {
   return (
     <Container fluid className="dashboard-main-container">
       <Row classsname="d-flex justify-content-between">
@@ -29,9 +29,9 @@ function LandlordsPage() {
         <Col lg={8} className="dashboard-center">
           <Nav />
           <div className="main-dashboard">
-            <p className="main-hero-1">Landlords</p>
+            <p className="main-hero-1">Tenants</p>
             <p className="main-copy-1">
-              You have 4 New Landlords in the System &nbsp;
+              You have 3 New Tenants in the System &nbsp;
               <span>
                 <FontAwesomeIcon icon={faChevronCircleRight} size="sm" />
               </span>
@@ -41,19 +41,19 @@ function LandlordsPage() {
               <Col className="d-flex flex-row">
                 <SummaryCard
                   summaryIcon={<Icons.SummaryRequestsIcon />}
-                  summaryHeading="Top Landlords"
+                  summaryHeading="Top Tenants"
                   summaryContent="10+"
                 />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <SummaryCard
                   summaryIcon={<Icons.SummaryPiggyIcon />}
                   summaryHeading="Most Points"
-                  summaryContent="45000 jpts"
+                  summaryContent="5000 jpts"
                 />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <SummaryCard
                   summaryIcon={<Icons.SummaryTenantsIcon />}
-                  summaryHeading="With 50+ Tenants"
+                  summaryHeading="Defaulters"
                   summaryContent="10+"
                 />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -61,33 +61,33 @@ function LandlordsPage() {
             </Row>
 
             <div className="dashboard-overview">
-              <p className="sub-header">Top Landlords</p>
+              <p className="sub-header">Top Tenants</p>
               <p className="main-copy-1">November 2021 stats</p>
               <Row>
                 <Col className="d-flex flex-row">
                   <TopIndividuals
                     UserImage={Landlord1}
-                    UserName="Esther Howard"
-                    UserProperty="Lake View Aprt"
+                    UserName="Elanor Pena"
+                    UserProperty="22000 jpts"
                   />
 
                   <TopIndividuals
                     UserImage={Landlord2}
-                    UserName="Jenny Wilson"
-                    UserProperty="GreenFields"
+                    UserName="Robert Fox"
+                    UserProperty="13000 jpts"
                   />
 
                   <TopIndividuals
                     UserImage={Landlord3}
-                    UserName="Floyd Miles"
-                    UserProperty="Westlands Plaza"
+                    UserName="Marvin McKinney"
+                    UserProperty="40000 jpts"
                   />
                 </Col>
               </Row>
             </div>
 
             <div className="dashboard-overview">
-              <p className="sub-header">New Landlords</p>
+              <p className="sub-header">New Sign Ups</p>
               <p className="main-copy-1">November 1-30, 2021</p>
               <LandlordsList />
             </div>
@@ -99,8 +99,8 @@ function LandlordsPage() {
             <Row className="p-2">
               <Col className="d-flex justify-content-between">
                 <div>
-                  <h2 className="properties-num">Landlord</h2>
-                  <p className="location-copy">ID: L002342</p>
+                  <h2 className="properties-num">Tenant</h2>
+                  <p className="location-copy">ID: T001242</p>
                   <Icons.UnverifiedChip />
                 </div>
                 <div>
@@ -117,8 +117,10 @@ function LandlordsPage() {
 
                 <Col className="col-md-10">
                   &nbsp;
-                  <h6 className="landlord-name">Albert Flores</h6>
-                  <h6 className="landlord-property">Landlord Emlack Hse</h6>
+                  <h6 className="landlord-name">Theresa Webb</h6>
+                  <h6 className="landlord-property">
+                    Tenant Kilimani Villas Hse 93
+                  </h6>
                   <h6 className="landlord-contact">
                     <span>
                       <Icons.PhoneIcon />
@@ -157,14 +159,14 @@ function LandlordsPage() {
                 </div>
                 <div className="prop-details-group">
                   <Icons.OpenDoorIcon /> &nbsp;
-                  <h6 className="prop-details-copy">12 units</h6>
+                  <h6 className="prop-details-copy">Hse 93</h6>
                 </div>
               </Col>
               &nbsp; &nbsp;
               <Col className="col-md-12 d-flex justify-content-center">
                 <div className="prop-details-group">
                   <Icons.SmallKeyIcon /> &nbsp;
-                  <h6 className="prop-details-copy">12 Tenants</h6>
+                  <h6 className="prop-details-copy">10+Neighbors</h6>
                 </div>
                 <div className="prop-details-group">
                   <Icons.SmallwalletIcon /> &nbsp;
@@ -186,4 +188,4 @@ function LandlordsPage() {
   );
 }
 
-export default LandlordsPage;
+export default TenantsPage;
